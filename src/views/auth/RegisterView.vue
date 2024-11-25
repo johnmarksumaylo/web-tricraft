@@ -41,19 +41,31 @@ function onClick() {
 
             <v-card-text class="bg-surface-light pt-4">
               <v-form fast-fail @submit.prevent>
+                <v-row>
+                  <v-col cols="6">
+                    <v-text-field label="First Name"></v-text-field>
+                  </v-col>
+                  <v-col cols="6"><v-text-field label="Last Name"></v-text-field></v-col>
+                </v-row>
+
                 <v-text-field label="E-mail"></v-text-field>
 
-                <v-text-field label="Password" type="password"></v-text-field>
+                <v-row>
+                  <v-col cols="6"
+                    ><v-text-field label="Password" type="password"></v-text-field
+                  ></v-col>
+                  <v-col cols="6"
+                    ><v-text-field label="Confirm Password" type="password"></v-text-field
+                  ></v-col>
+                </v-row>
 
                 <v-btn class="mt-2" type="submit" block>Login</v-btn>
               </v-form>
 
               <v-divider class="my-5"></v-divider>
               <h4 class="text-center">
-                Dont have account?
-                <router-link class="text-success" to="/register"
-                  >Click here to register</router-link
-                >
+                Already have acount?
+                <RouterLink class="text-success" to="/login">Click here to Login</RouterLink>
               </h4>
             </v-card-text>
           </v-card>
