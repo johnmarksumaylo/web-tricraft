@@ -16,7 +16,7 @@ function onClick() {
 
         <v-btn
           :prepend-icon="theme === 'light' ? 'mdi-weather-sunny' : 'mdi-weather-night'"
-          text="Toggle Theme"
+          variant="elevated"
           slim
           @click="onClick"
         ></v-btn>
@@ -59,7 +59,7 @@ function onClick() {
                   ></v-col>
                 </v-row>
 
-                <v-btn class="mt-2" type="submit" block>Login</v-btn>
+                <v-btn class="mt-2" type="submit" block>Register</v-btn>
               </v-form>
 
               <v-divider class="my-5"></v-divider>
